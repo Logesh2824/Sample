@@ -1,0 +1,35 @@
+
+
+What Are the First 4 Blocks in Ganache?
+When you start Ganache for the first time, it automatically mines a few initial blocks for internal setup and system transactions. These are:
+
+🟢 Block 0: Genesis Block
+Every blockchain must have a Genesis Block (Block 0).
+
+It is the first block created when the blockchain is initialized.
+
+It does not contain any transactions.
+
+🔵 Block 1, 2, 3, 4: Internal Transactions
+Ganache creates a few initial blocks that contain system transactions like:
+
+Allocating Ether to test accounts
+
+Ganache provides 10 accounts, each with 100 ETH by default.
+
+These balances are assigned in early blocks.
+
+Setting up the EVM (Ethereum Virtual Machine) state
+
+The blockchain needs to initialize certain internal settings.
+
+Other system-level operations
+
+Some test networks include small transactions to configure the blockchain environment.
+
+📌 Why Do You See 4 Blocks Before You Deploy?
+Block 0 → Genesis block.
+
+Block 1-4 → System transactions (account funding, internal setups).
+
+When you deploy your first contract, a new block (Block 5) is created.
